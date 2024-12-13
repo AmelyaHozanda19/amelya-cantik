@@ -1,0 +1,244 @@
+/* Resetting basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce1f1; /* Pink background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #ff66b2; /* Bright pink */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffb3d9; /* Lighter pink on hover */
+}
+
+.top-btn .nav-btn {
+    background-color: #ff3399; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.top-btn .nav-btn:hover {
+    background-color: #ff66b2;
+}
+
+/* Home section styles */
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    background-color: #ffe6f7; /* Soft pink */
+}
+
+.home-content h3, .home-content h1 {
+    color: #ff66b2;
+}
+
+.home-content p {
+    font-size: 1.1em;
+    margin-top: 20px;
+    color: #555;
+}
+
+.social-media a {
+    color: #ff66b2;
+    font-size: 2em;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ff3399;
+}
+
+/* Image modification for rounded shape */
+.home-img img {
+    border-radius: 50%; /* This makes the first image circular */
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.6);
+    width: 450px;
+    height: 450px; /* Ensure the height is the same as width to maintain the circular shape */
+}
+
+/* Other sections remain the same */
+
+/* About section styles */
+.about {
+    background-color: #fce1f1;
+    padding: 40px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #ff66b2;
+}
+
+.about h3 {
+    font-size: 1.8em;
+    color: #ff3399;
+}
+
+.about p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Portfolio section styles */
+.portfolio {
+    background-color: #ffe6f7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2.5em;
+    color: #ff66b2;
+}
+
+.portfolio-content .row {
+    margin-top: 30px;
+}
+
+.portfolio-content img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+}
+
+.portfolio .row-text h5 {
+    font-size: 1.1em;
+    color: #ff3399;
+    margin-top: 10px;
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #fce1f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact form {
+    margin-top: 20px;
+}
+
+.input-box {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-box input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff66b2;
+    border-radius: 5px;
+    background-color: #ffe6f7;
+    color: #555;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #ff3399;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff66b2;
+}
+
+/* Footer section styles */
+.footer {
+    background-color: #ff66b2;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 2em;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.footer .social a:hover {
+    color: #ffb3d9;
+}
+
+.footer .copyright {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .about-content, .portfolio-content, .contact form {
+        text-align: left;
+    }
+
+    .portfolio-content img {
+        max-width: 100%;
+    }
+}
